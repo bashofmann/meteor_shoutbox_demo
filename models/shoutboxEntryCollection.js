@@ -1,0 +1,1 @@
+ShoutBoxEntryCollection = new Meteor.Collection("shoutboxEntries");

@@ -1,0 +1,22 @@
+<template name="stream">
+
+    <div class="page-header">
+        <h1>Stream</h1>
+    </div>
+    <div class="well">
+        <dl>
+            {{#each entries}}
+                {{> entry}}
+            {{/each}}
+        </dl>
+    </div>
+
+    {{#if username}}
+    {{> input}}
+    {{> logout}}
+    {{/if}}
+
+    {{#unless username}}
+    {{> login}}
+    {{/unless}}
+</template>
